@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <title>
+        paradigms
+    </title>
+</head>
+
+<body>
+
+    <body bgcolor="#ffffff" link="#0000ff" vlink="0000ff">
+        <center>
+            <h1>Retro Web</h1>
+        </center>
+        <center>
+            <h2>Major Programming Paradigms</h2>
+        </center>
+        <hr>
+        <h4>There are several kinds of major programming paradigms:<br>
+            <ol>
+                <li><a href="#imperative">Imperative</a>
+                <li><a href="#logical">Logical</a>
+                <li><a href="#functional">Functional</a>
+                <li><a href="#object">Object-Oriented</a>
+            </ol>
+            <h4>It can be shown that anything solvable using one of these paradigms can be solved using the others;
+                however, certain types of problems lend themselves more naturally to specific paradigms.
+                <hr>
+                <b><a name="imperative">Imperative</a></b><br>
+                <ul>
+                    <li><i>Introduction</i>:<br>
+                        The <i>imperative</i> programming paradigm assumes that the computer can maintain through
+                        environments of variables any changes in a computation process. Computations are performed
+                        through a guided sequence of steps, in which these variables are referred to or changed. The
+                        order of the steps is crucial, because a given step will have different consequences depending
+                        on the current values of variables when the step is executed. <br>
+                    <li><i>Imperative Languages</i>:<br>
+                        Popular programming languages are imperative more often than they are any other paradigm studies
+                        in this course. There are two reasons for such popularity:
+                        <ol>
+                            <li>the imperative paradigm most closely resembles the actual machine itself, so the
+                                programmer is much closer to the machine;<br>
+                            <li>because of such closeness, the imperative paradigm was the only one efficient enough for
+                                widespread use until recently.<br>
+                        </ol>
+                    <li><i>Advantages</i>
+                        <ul>
+                            <li>efficient;
+                            <li>close to the machine;
+                            <li>popular;
+                            <li>familiar.
+                        </ul>
+                    <li><i>Disadvantages</i>
+                        <ul>
+                            <li>The semantics of a program can be complex to understand or prove, because of <a
+                                    href="ref_trans.html">referential transparency</a> does not hold(due to side
+                                effects)
+                            <li>Side effects also make debugging harder;
+                            <li>Abstration is more limitted than with some paradigms;
+                            <li>Order is crucial, which doesn't always suit itself to problems.
+                        </ul>
+                        </ol>
+                        <hr>
+                        <a name="logical">Logical</a><br>
+                        <ul>
+                            <li><i>Introduction:</i></br>
+                                The <i>Logical Paradigm</i> takes a declarative approach to problem-solving. Various
+                                logical assertions about a situation are made, establishing all known facts. Then
+                                queries are made. The role of the computer becomes maintaining data and logical
+                                deduction. <br>
+                            <li><i>Logical Paradigm Programming:</i><br>
+                                A logical program is divided into three sections:<br>
+                                <ol>
+                                    <li>a series of definitions/declarations that define the problem domain
+                                    <li>statements of relevant facts
+                                    <li>statement of goals in the form of a query
+                                </ol>
+                                <br>
+                                Any deducible solution to a query is returned. The definitions and declarations are
+                                constructed entirely from relations. i.e. X is a member of Y or X is in the internal
+                                between a and b etc.<br>
+                            <li><i>Advantages:</i><br>
+                                The advantages of logic oriented programming are bifold:<br>
+                                <ol>
+                                    <li>The system solves the problem, so the programming steps themselves are kept to a
+                                        minimum;
+                                    <li>Proving the validity of a given program is simple.
+                                </ol>
+                                <br>
+                        </ul>
+                        <a href="samplelogic.html">Sample</a> Code of Logical Paradigm.
+
+                        <hr>
+                        <a name="functional">Functional</a><br>
+                        <ul>
+                            <li><i>Introduction</i><br>
+                                The <i>Functional</i> Programming paradigm views all subprograms as functions in the
+                                mathematical sense-informally, they take in arguments and return a single solution. The
+                                solution returned is based entirely on the input, and the time at which a function is
+                                called has no relevance. The computational model is therefore one of function
+                                application and reduction. <br>
+                            <li><i>Languages</i><br>
+                                Functional languages are created based on the functional paradigm. Such languages permit
+                                functional solutions to problems by permitting a programmer to treat functions as
+                                first-class objects(they can be treated as data, assumed to have the value of what they
+                                return; therefore, they can be passed to other functions as arguments or returned from
+                                functions).<br>
+                            <li><i>Advantages</i><br>
+                                The following are desirable properties of a functional language:<br>
+                                <ol>
+                                    <li>The high level of abstraction, especially when functions are used, supresses
+                                        many of the details of programming and thus removes the possibility of commiting
+                                        many classes of errors;
+                                    <li>The lack of dependence on assignment operations, allowing programs to be
+                                        evaluated in many different orders. This evaluation order independence makes
+                                        function-oriented languages good candidates for programming massively parallel
+                                        computers;
+                                    <li>The absence of assignment operations makes the function-oriented programs much
+                                        more amenable to mathematical proof and analysis than are imperative programs,
+                                        because functional programs possess referential transparency.
+                                </ol>
+                            <li><i>Disadvantages</i><br>
+                                <ol>
+                                    <li>Perhaps less efficiencey
+                                    <li>Problems involving many variables or a lot of sequential activity are sometimes
+                                        easier to handle imperatively or with object-oriented programming.
+                                </ol>
+                        </ul>
+                        <a href="samplefunction.html">Sample</a> Code of Functional Paradigm.
+
+                        <hr>
+                        <a name="object">Object-Oriented</a><br>
+                        <ul>
+                            <li><i>Introduction</i><br>
+                                <i>Object Oriented Programming (OOP)</i> is a paradigm in which real-world objects are
+                                each viewed as seperate entities having their own state which is modified only by built
+                                in procedures, called methods.<br>
+                                <br>
+                                Because objects operate independently, they are encapsulated into modules which contain
+                                both local environments and methods. Communication with an object is done by message
+                                passing.<br>
+                                <br>
+                                Objects are organized into classes, from which they inherit methods and equivalent
+                                variables. The object-oriented paradigm provides key benefits of reusable code and code
+                                extensibility.
+                            <li><i>Features & Benefits</i><br>
+                                A new class (called a <i>derived class</i> or <i>subclass</i>) may be <i>derived</i>
+                                from another class (called a <i>base class</i> or <i>superclass</i>) by a mechanism
+                                called inheritance. The derived class <i>inherits</i> all the features of the base
+                                class: its structure and behavior(response to messages). In addition, the derived class
+                                may contain <i>additional</i> state (instance variables), and may exhibit additional
+                                behavior (new methods to resond to new messages). Significantly, the derived class can
+                                also <i>override</i> behavior corresponding to some of the methods of the base class:
+                                there would be a different <i>method</i> to respond to the same message. Also, the
+                                inheritance mechanism is allowed even <i>without access to the source code of the base
+                                    class</i>.<br>
+                                <br>
+                                The ability to use inheritance is the single most distinguishing feature of the OOP
+                                paradigm. Inheritance gives OOP its chief benefit over other programming paradigms -
+                                relatively easy <i>code reuse</i> and <i>extension</i> without the need to change
+                                existing source code.<br>
+                                <br>
+                                The mechanism of modeling a program as a collection of objects of various classes, and
+                                furthermore describing many classes as extensions or modifications of other classes,
+                                provides a high degree of modularity.<br>
+                                <br>
+                                Ideally, the state of an object is manipulated and accessed only by that object's
+                                methods. (Most O-O languages allow direct manipulation of the state, but such access is
+                                stylistically discouraged). In this way, a class' <i>interface</i> (how objects of that
+                                class are accessed) is separate from the class' <i> implementation</i> (the actual code
+                                of the class' methods). Thus <i>encapsulation</i> and <i>information hiding</i> are
+                                inherent benefits of OOP.<br>
+                        </ul>
+                        <a href="sampleoop.html">Sample</a> Code of Object-Oriented Programming Paradigm.
+                        <hr>
+    </body>
+
+</html>
